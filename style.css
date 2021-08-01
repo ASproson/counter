@@ -1,0 +1,80 @@
+html {
+  font-family: 'Raleway';
+  font-size: 16px;
+}
+
+body {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.counter_container h1 {
+  text-align: center;
+  font-size: 4rem;
+  transition: 1s ease;
+}
+
+#counter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3.5rem;
+  font-size: 5rem;
+  transition: 1s ease;
+}
+
+.counter_buttons {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+#decrease, #reset {
+  margin-right: 6rem;
+}
+
+#decrease, #reset, #increase {
+  border-radius: 10px;
+  border: 1px solid;
+  padding: 1.2rem;
+}
+
+/*
+=====
+Hover Animation Settings
+=====
+*/
+
+#decrease:hover {
+  background-color: #EC7063;
+  border: 1px solid #E74C3C;
+  color: white;
+  transition: 1s ease;
+}
+
+#reset:hover {
+  background-color: #5DADE2;
+  border: 1px solid #3498DB;
+  color: white;
+  transition: 1s ease;
+}
+
+#increase:hover {
+  background-color: #58D68D;
+  border: 1px solid #2ECC71;
+  color: white;
+  transition: 1s ease;
+}
+
+/*
+=====
+Return to default after Hover animation
+=====
+*/
+#decrease, #reset, #increase {
+  background-color: white;
+  border: 1px solid black;
+  transition: .7s ease;
+}
